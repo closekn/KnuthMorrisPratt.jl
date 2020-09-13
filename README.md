@@ -6,6 +6,10 @@
 
 A Julia implementation of the Knuth-Morris-Pratt algorithm for string searching.
 
+## Feature
+
+Find the first occurrence of a keyword in the text.
+
 ## Install
 
 - Press ']'' in Julia's REPL to enter package mode.
