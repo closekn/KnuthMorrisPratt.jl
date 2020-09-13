@@ -1,4 +1,5 @@
 module KnuthMorrisPratt
+  export KMP_search
 
   #=
     @fn     word search using KMP
