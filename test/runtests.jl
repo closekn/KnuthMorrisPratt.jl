@@ -1,15 +1,16 @@
 using KnuthMorrisPratt
 using Test
 
-@testset "KnuthMorrisPratt.jl" begin
-    # function KMP_search
+@testset "KMP_search" begin
     test_sample1 = KMP_search("ABC ABCDAB ABCDABCDABDE", "ABCDABD")
     test_sample2 = KMP_search("babcbabcabcaabcabcabcacabc", "abcabcacab")
     test_sample3 = KMP_search("ABAB CDCDAB ABDE", "AB")
     @test test_sample1 == 16
     @test test_sample2 == 16
     @test test_sample3 == 1
-    # function generate_KMP_table
+end
+
+@testset "generate_KMP_table" begin
     test_sample1 = KnuthMorrisPratt.generate_KMP_table("ABCDABD")
     test_sample2 = KnuthMorrisPratt.generate_KMP_table("AAAAAAA")
     test_sample3 = KnuthMorrisPratt.generate_KMP_table("abcabcacab")
